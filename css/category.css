@@ -1,0 +1,127 @@
+.box{
+	min-width: 300px;
+	max-width: 640px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/*头部部分*/
+.header{
+	width: 100%;
+	height: 44px;
+	background: url('../images/header-bg.png') repeat-x;
+	background-size: 1px 44px;
+	border-bottom: 1px solid #e0e0e0;
+
+}
+
+.header form{
+	width: 100%;
+	padding: 7px 40px;
+}
+
+.header .icon-back{
+	background-position: -20px 0;
+	width: 20px;
+	height: 22px;
+	display: block;
+	top: 11px;
+	left: 10px;
+	position: absolute;
+}
+
+.header .icon-menu{
+	background-position: -60px 0;
+	width: 20px;
+	height: 22px;
+	display: block;
+	position: absolute;
+	top: 11px;
+	right: 10px;
+}
+
+.header form input{
+	width: 100%;
+	height: 30px;
+	font-size: 12px;
+	padding: 0 8px;
+	border: 1px solid #bfbfbf;
+	border-radius: 4px;
+}
+
+
+/* 导航部分 */
+.nav{
+	width: 90px;
+	position: absolute;
+	background-color: white;
+	/* overflow: hidden; */
+}
+
+ul{
+	width: 100%;
+}
+
+.nav ul li{
+	width: 90px;
+	height: 50px;
+	display: block;
+	background: #f3f4f6;
+	border: 1px solid #e0e0e0;
+	border-top: none;
+}
+
+.nav ul li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	line-height: 50px;
+
+}
+
+
+/*商品部分*/
+main{
+	padding-left: 90px;
+}
+
+.products{
+	padding: 10px 12px;
+}
+
+.products .ad img{
+	width: 100%;
+}
+
+.products .products_box .products_title{
+	padding: 8px 0;
+}
+
+.products .products_box .products_title h3{
+	color: #888;
+	font-size: 14px;
+}
+
+.products .products_box .products_content ul li{
+	width: 33.3%;
+	float: left;
+	padding: 8px 0;
+	text-align: center;
+}
+
+.products .products_box .products_content ul li a{
+
+}
+
+.products .products_box .products_content ul li a img{
+	width: 62px;
+	height: 62px;
+}
+
+.products .products_box .products_content ul li a p{
+	color: #333;
+	font-size: 12px;
+}

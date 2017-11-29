@@ -1,0 +1,306 @@
+body{
+	background-color: #f0f0f0;
+}
+
+.box{
+	max-width: 640px;
+	min-width: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* 头部区域 */
+.header{
+	width: 100%;
+	height: 40px;
+	background: rgba(201,21,35,0.85);
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;  /*！！！*/
+}
+
+.header .icon-logo{
+	background-position: 0 -103px;
+	width: 60px;
+	height: 36px;
+	position: absolute;
+	top: 4px;
+	left: 12px;
+}
+
+.header form{
+	width: 100%;
+	height: 40px;
+	padding-left: 80px;
+	padding-right: 50px;
+	position: relative;
+}
+
+.header .icon-search{
+	background-position: -60px -109px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	left: 87px;
+}
+
+.header form input{
+	width: 100%;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 15px;
+	margin-top: 5px;
+	padding-left: 30px;
+}
+
+.header .login{
+	width: 40px;
+	height: 40px;
+	display: block;
+	color: #fff;
+	font-size: 15px;
+	line-height: 40px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 5px;
+}
+
+/* 轮播图区域 */
+.banner{
+	overflow: hidden;
+	position: relative;
+}
+
+.banner ul.banner_img{
+	width: 800%;
+}
+
+.banner ul.banner_img li{
+	width: 12.5%;
+	float: left;
+}
+
+.banner ul.banner_img li img{
+	width: 100%;
+}
+
+.banner ul.banner_point{
+	height: 6px;
+	position: absolute;
+	bottom: 12px;
+	left: 50%;
+	margin-left: -66px;
+}
+
+.banner ul.banner_point li{
+	width: 6px;
+	height: 6px;
+	display: block;
+	border-radius: 3px;
+	border: 1px solid #fff;
+	float: left;
+}
+
+.banner ul.banner_point li + li{
+	margin-left: 12px;
+}
+
+/* 导航区域 */
+.nav{
+	width: 100%;
+	height: 149px;
+	padding: 0 3.125%;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+
+.nav ul li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	padding-top: 8px;
+}
+
+.nav ul li img{
+	width: 40px;
+	height: 40px;
+}
+
+
+/* 商品区域 */
+.products section{
+	background-color: #fff;
+	margin-bottom: 10px;
+	box-shadow: 0 0 1px 1px #e0e0e0;
+}
+
+.products section .products_title{
+	width: 100%;
+	height: 30px;
+	position: relative;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.products section .products_title h4{
+	color: #666;
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: inherit;
+	margin-left: 20px; 
+	float: left;
+}
+
+.products section .products_title h4::before{
+	width: 3px;
+	height: 12px;
+	content: "";
+	display: block;
+	background: #d8505c;
+	position: absolute;
+	top: 10px;
+	left: 12px;
+}
+
+.products section .products_content{
+	width: 100%;
+}
+
+.products section .products_content > a {
+	width: 50%;
+}
+
+.products section .products_content > a > img{
+	width: 100%;
+	display: block; 
+	/* 没加前图片与图片之间有明显的间隙 */
+}
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}
+
+.border_left{
+	border-left: 1px solid #e0e0e0;
+}
+
+.border_right{
+	border-right: 1px solid #e0e0e0;
+}
+
+.border_bottom{
+	border-bottom: 1px solid #e0e0e0;
+}
+
+
+
+/* 秒杀区域 */
+.products .seckill .products_title{
+	border-bottom: none;
+	/* 加.products提高选择器优先级 */
+}
+
+.seckill .products_title .products_title_l i.icon_clock{
+	width: 16px;
+	height: 20px;
+	display: block;
+	background: url("../images/seckill-icon.png") no-repeat;
+	background-size: 16px 20px;
+	margin: 5px 8px;
+	float: left;
+}
+
+.seckill .products_title p{
+	color: #d8505c;
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: inherit;
+	margin-right: 10px;
+	float: left;
+}
+
+.seckill .products_title .products_title_l li{
+	margin-left: 3px;
+	margin-top: 9px;
+	float: left;
+}
+
+.seckill .products_title .products_title_l li.num{
+	width: 12px;
+	height: 15px;
+	display: block;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	line-height: 15px;
+}
+
+.seckill .products_title .products_title_l li.colon{
+	text-align: center;
+	line-height: 15px;
+}
+
+.seckill .products_title .products_title_r{
+	line-height: 30px;
+	margin-right: 8px;
+	float: right;
+}
+
+.seckill .products_content{
+	padding: 10px 0;
+}
+
+.seckill .products_content ul{
+	width: 100%;
+}
+
+.seckill .products_content ul li{
+	width: 33.3%;
+	float: left;
+}
+
+.seckill .products_content ul li .img_box{
+	padding: 10px 0;
+}
+
+.seckill .products_content ul li + li .img_box{
+	border-left: 1px solid #e0e0e0;
+}
+
+.seckill .products_content ul li a img{
+	width: 64%;
+	display: block;
+	margin: 0 auto;
+}
+
+.seckill .products_content ul li p{
+	text-align: center;
+
+}
+
+.seckill .products_content ul li del{
+	display: block; 
+	/*因为del标签是行内元素 所以需要把它转化为块级元素*/
+	text-align: center;
+	color: #888;
+/* 	中线可以用del标签直接实现，也可以用
+	text-decoration：line-through实现 */
+}
+
+.seckill .products_content ul li p.price_new{
+	color: #d8505c;
+}
+
+.seckill .products_content ul li p.price_old{
+	color: #888;
+	 text-decoration: line-through; 
+}
+
+/*超值购*/
+.seckill .products_content
